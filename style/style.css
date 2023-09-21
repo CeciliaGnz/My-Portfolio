@@ -810,6 +810,32 @@ section{
 }
 
 /* ---Dispositivos medianos---*/
+@media screen and (max-width: 568px){
+    .home__content{
+        gird-template-columns: max-content 1fr 1 fr;
+    }
 
+    .home__data{
+        grid-column: initial;
+    }
+
+    .home__img{
+        order: 1;
+        justify-self: center;
+    }
+
+    .about__container,
+    .skills__container,
+    .portfolio__content,
+    .interests__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .qualification__sections{
+        display: grid;
+        grid-template-columns: .6fr;
+        justify-content: center;
+    }
+}
 
 /* ---Dispositivos grandes---*/
