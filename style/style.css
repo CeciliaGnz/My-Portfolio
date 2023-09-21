@@ -827,7 +827,9 @@ section{
     .about__container,
     .skills__container,
     .portfolio__content,
-    .interests__container{
+    .interests__container,
+    .contact__container,
+    .footer__container{
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -837,5 +839,36 @@ section{
         justify-content: center;
     }
 }
+@media screen and (min-width: 768px){
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .body{
+        margin: 0;
+    }
+
+    .section{
+        padding: 6rem 0 2rem;
+    }
+    .section__subtitle{
+        margin-bottom: 4rem;
+    }
+
+    .header{
+        top: 0;
+        bottom: initial;
+    }
+    
+    .header,
+    .main,
+    .footer__container{
+        padding: 0 1rem;
+    }
+
+    
+}
+
 
 /* ---Dispositivos grandes---*/
