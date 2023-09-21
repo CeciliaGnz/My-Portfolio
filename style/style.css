@@ -717,3 +717,54 @@ section{
 .footer__social{
     color: #fff;
 }
+
+.interests{
+    text-align: center;
+}
+
+.interests__bg{
+    background-color: var(--first-color-second);
+    padding-top: 3rem;
+}
+
+.interests__title{
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-0-75);
+}
+
+.interests__description{
+    margin-bottom: var(--mb-1-5);
+}
+
+.interests__title,
+.interests__description{
+    color: #fff;
+}
+
+.interests__img{
+    width: 232px;
+    justify-self: center;
+}
+
+.interests__info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2-5);
+}
+
+.interests__icon{
+    font-size: 2rem;
+    color: #fff;
+    margin-right: var(--mb-0-75);
+}
+
+.interests__info-name{
+    font-size: var(--font-medium);
+    color: #fff;
+}
+
+
+.interests__info-name{
+    display: block;
+    text-align: center;
+}
