@@ -73,9 +73,6 @@
     }
 }
 
-/* ---Variables de css - modo oscuro ---*/
-
-/* ---Botón oscuro/claro--- */
 
 /* ---Base---*/
 *{
@@ -237,8 +234,14 @@ section{
 }
 
 /* ---Activar enlace---*/
+.active-link{
+    color: var(--first-color);
+}
 
 /* ---Change background header--- */
+.scroll-header{
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, .20);
+}
 
 /* ---Inicio--- */
 .home__container{
@@ -571,8 +574,6 @@ section{
 .qualification__button.qualification__active{
     color: var(--first-color);
 }
-/* ---Active modal--- */
-
 
 /* ---Portafolio--- */
 .portfolio__container{
@@ -718,6 +719,8 @@ section{
     color: #fff;
 }
 
+
+/* ---Intereses---*/
 .interests{
     text-align: center;
 }
@@ -768,3 +771,45 @@ section{
     display: block;
     text-align: center;
 }
+
+/* ---Media queries---*/
+/* ---Dispositivos pequeños---*/
+@media screen and (max-width: 350px){
+    .container{
+        margin-left: var(--mb-1);
+        margin-right: var(--mb-1);
+    }
+    
+    .nav__menu{
+        padding: 2rem .25rem 4rem;
+    }
+
+    .nav__list{
+        column-gap: 0;
+    }
+
+    .home__content{
+        grid-template-columns: .25fr 3fr;
+    }
+
+    .home__blob{
+        width: 180px;
+    }
+
+    .skills__title{
+        font-size: var(--normal-font-size);
+    }
+
+    .qualification__data{
+        gap: .5rem;
+    }
+
+    .interests__img{
+        width: 200px;
+    }
+}
+
+/* ---Dispositivos medianos---*/
+
+
+/* ---Dispositivos grandes---*/
