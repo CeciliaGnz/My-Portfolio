@@ -3,10 +3,13 @@
     <title>Mi Portafolio - Cecilia González</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- CSS -->
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="style/swiper-bundle.min.css">
+    <!-- CSS -->
     <link rel="stylesheet" href="style/style.css">
      <!-- FAVICON -->
     <link rel="shortcut icon" href="img/portfolio.png" type="image/x-icon">
+    
      <!-- ICONOS -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 </head>
@@ -394,17 +397,17 @@
             <h2 class="section__title">Portafolio</h2>
             <span class="section__subtitle">Mis trabajos más recientes</span>
             
-            <div class="portfolio__container container">
-                <div>
+            <div class="portfolio__container container swiper mySwiper">
+                <div class="swiper-wrapper">
                   <!-- PORTAFOLIO 1-->  
-                  <div class="portfolio__content grid">
+                  <div class="portfolio__content grid swiper-slide">
                     <img src="img/logomapatec.png" alt="" class="portfolio__img">
 
                     <div class="portfolio__data">
                         <h3 class="portfolio__title">Mapatec Aplicación movil</h3>
                         <p class="portfolio__description">Se creó una aplicación de orientación para la Universidad
                              Tecnológica de Panamá, utilizando Google Maps para 
-                             asistencia basada en la ubicación dentro del edificio 3. </p>
+                             asistencia basada en la ubicación. </p>
 
                         <a href="#" class="button button--flex button--small portfolio__button">
                             Demo
@@ -412,23 +415,136 @@
                         </a>     
                     </div>
                   </div>
+
+                  <!-- PORTAFOLIO 2-->  
+                  <div class="portfolio__content grid swiper-slide">
+                    <img src="img/proyecto-css-framework.jpg" alt="" class="portfolio__img">
+
+                    <div class="portfolio__data">
+                        <h3 class="portfolio__title">Galeria y animación con CSS</h3>
+                        <p class="portfolio__description">Es un proyecto web que se basa en un videojuego 
+                            como referencia y aplica animaciones con CSS. Además, 
+                            incluye una galería de laboratorios creada con el framework 
+                            Bulma. </p>
+
+                        <a href="#" class="button button--flex button--small portfolio__button">
+                            Demo
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </a>     
+                    </div>
+                  </div>
+
                 </div>
+                <!--Arrows-->
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                </div>
+                <!--paginacion-->
+                <div class="swiper-pagination"></div>
+
             </div>
         </section>
 
         <!-- CONTACTAME -->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contactame</h2>
+            <span class="section__subtitle">¡Ponte en contacto conmigo!</span>
+
+            <div class="contact__container container grid">
+                <div>
+                     <!-- TELEFONO -->
+                    <div class="contact__information">
+                        <i class="uil uil-phone contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Teléfono</h3>
+                            <span class="contact__subtitle">+507 6063-1241</span>
+                        </div>
+                    </div>
+
+                    <!-- CORREO -->
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon"></i>
+
+                        <div>
+                            <h3 class="contact__title">Correo</h3>
+                            <span class="contact__subtitle">ceciliasoto200309@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <!-- DIRECCION -->
+                    <div class="contact__information">
+                        <i class="uil uil-map contact__icon" ></i>
+
+                        <div>
+                            <h3 class="contact__title">Dirección</h3>
+                            <span class="contact__subtitle">Panamá, Las Cumbres, Alcalde Díaz,
+                                Sitio el Carmen
+                                </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- COLOCAR INTERESES COMO HICE EN CONTACTO Y CON FONDO MORADO COMO SE HIZO SERVICIOS -->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Intereses</h2>
+            <span class="section__subtitle">Explora mis pasiones e intereses.</span>
+
+        
+        </section>
+
+
      </main>
    
     
     <!-- PIE DE PÁGINA -->
-    <footer class="pie-pagina">
-        
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Cecilia</h1>
+                    <span class="footer__subtitle">Frontend developer</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portafolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contactame</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://wa.me/50760631241" target="_blank" class="footer__social">
+                        <i class="uil uil-whatsapp"></i>
+                    </a>
+                    <a href="https://www.instagram.com/victoriagsto/" target="_blank"  class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/cecilia-gonzalez-194881140" target="_blank"  class="footer__social">
+                        <i class="uil uil-linkedin-alt"></i>  
+                    </a>
+                    <a href="https://github.com/CeciliaGnz" target="_blank"  class="footer__social">
+                        <i class="uil uil-github"></i>  
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; Cecilia Gonzalez. Todos los derechos reservados</p>
+        </div>
     </footer>
 
     <!-- SCROLL TOP -->
 
     <!-- SWIPER JS -->
-    <script src=""></script>
+    <script src="js/swiper-bundle.min.js"></script>
 
 </body>
 
