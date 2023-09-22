@@ -812,7 +812,7 @@ section{
 /* ---Dispositivos medianos---*/
 @media screen and (max-width: 568px){
     .home__content{
-        gird-template-columns: max-content 1fr 1 fr;
+        grid-template-columns: max-content 1fr 1fr;
     }
 
     .home__data{
@@ -839,6 +839,7 @@ section{
         justify-content: center;
     }
 }
+
 @media screen and (min-width: 768px){
     .container{
         margin-left: auto;
@@ -867,7 +868,75 @@ section{
         padding: 0 1rem;
     }
 
+    .nav{
+        height: calc(var(--header-height)+ 1.5rem);
+        column-gap: 1rem;
+    }
+
+    .nav__icon,
+    .nav__close,
+    .nav__toggle{
+        display: none;
+    }
+
+    .nav__list{
+        display: flex;
+        column-gap: 2rem;
+    }
+
+    .nav__menu{
+        margin-left: auto;
+    }
     
+    .home__container{
+        row-gap: 5rem;
+    }
+
+    .home__content{
+        padding-top: 5.5rem;
+        column-gap: 2rem;
+    }
+
+    .home__blob{
+        width: 270px;
+    }
+
+    .home__scroll{
+        display: block;
+    }
+
+    .home__scroll-button{
+        margin-left: 3rem;
+    }
+
+    .about__container{
+        column-gap: 5rem;
+    }
+
+    .about__img{
+        width: 350px;
+    }
+
+    .about__description{
+        text-align: initial;
+    }
+
+    .about__info{
+        justify-content: space-between;
+    }
+
+    .about__buttons{
+        justify-content: initial;
+    }
+
+    .qualification__tabs{
+        justify-content: center;
+    }
+
+    .qualification__button{
+        margin: 0 var(--mb-1);
+    }
+
 }
 
 
